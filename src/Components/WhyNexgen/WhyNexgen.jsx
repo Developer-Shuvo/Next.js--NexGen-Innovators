@@ -7,7 +7,6 @@ import arrow from "@/assets/WhyNexgen-image/next.png";
 import coding from "@/assets/WhyNexgen-image/programming-background-concept.jpg";
 import wallpaper from "@/assets/WhyNexgen-image/delicate-floral-bloom-soft-light.jpg";
 
-
 const WhyNexgen = () => {
   return (
     <div id="whyUs" className="mx-auto w-full max-w-[1500px] px-4 md:px-10">
@@ -35,8 +34,10 @@ const WhyNexgen = () => {
 
           {/* Btn */}
           <div className="flex justify-center md:justify-start">
-            <button className="flex gap-2 px-3 py-2 mt-6 text-white
-             bg-blue-600 rounded-l-full rounded-r-full md:px-5 md:py-3 md:mt-8">
+            <button
+              className="flex gap-2 px-3 py-2 mt-6 text-white
+             bg-blue-600 rounded-l-full rounded-r-full md:px-5 md:py-3 md:mt-8"
+            >
               Learn more
               <Image className="h-6 w-6" src={arrow} alt="" />
             </button>
@@ -74,32 +75,41 @@ const WhyNexgen = () => {
 
         {/* ------- Card Part -------- */}
         <div className="relative hidden md:block md:mt-[135px] mt-[80px]">
-          {/* main card */}
+          {/* ============ main card ========== */}
           <div
-            className="md:w-[530px] w-[300px] md:h-[735px] h-[450px] bg-slate-800 rounded-2xl  bg-cover bg-center "
-            style={{ backgroundImage: `url(${wallpaper})` }}
+            className="relative md:w-[530px] w-[300px] md:h-[735px] 
+          h-[450px] rounded-2xl overflow-hidden"
           >
-            <div className="md:pt-[42px] pt-[32px] md:pl-[22px] pl-4 md:pr-[22px] pr-4">
-              {/* ------- */}
+            <Image
+              src={wallpaper}
+              alt="Main Card"
+              className="w-full h-full object-cover rounded-2xl"
+              priority
+            />
+
+            {/* Content on top of the image */}
+            <div className="absolute inset-0 p-4 md:p-6 flex flex-col">
+              {/* Top user image */}
               <div className="flex items-center gap-4 md:gap-6">
                 <Image
-                  className="w-10 h-10 md:w-14 md:h-14 rounded-full
-                   bg-yellow-400 p-[2px] "
                   src={image}
-                  alt=""
+                  alt="User"
+                  className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-yellow-400 p-[2px]"
                 />
               </div>
-              {/* ---inside image--- */}
+
+              {/* Inside image */}
               <motion.div
                 initial={{ x: -200, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: false, amount: 0.3 }}
+                className="mt-10"
               >
                 <Image
                   src={coding}
-                  className="w-full md:h-[305px] h-[250px] rounded-xl bg-blue-600 mt-10 "
-                  alt=""
+                  alt="Coding"
+                  className="w-full md:h-[305px] h-[250px] rounded-xl border-4 border-gray-500"
                 />
               </motion.div>
             </div>
@@ -111,7 +121,8 @@ const WhyNexgen = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="md:top-27 top-15 md:left-70 left-30 absolute md:h-[98px] h-[70px] md:w-[350px] w-[200px] bg-gray-900 rounded-lg "
+            className="md:top-20 top-15 md:left-70 left-30 absolute md:h-[98px]
+             h-[70px] md:w-[350px] w-[200px] bg-gray-900 rounded-lg border-1 border-stone-500"
           >
             <div className="flex items-center justify-end gap-2 text-center pt-[12px]">
               <Image
@@ -153,7 +164,9 @@ const WhyNexgen = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: false, amount: 0.3 }}
-            className="md:top-120 top-70 md:-left-20 -left-1 absolute md:h-[98px] h-[70px] md:w-[350px] w-[200px] bg-gray-900 rounded-lg"
+            className="md:top-120 top-70 md:-left-20 -left-1
+             absolute md:h-[98px] h-[70px] md:w-[350px] w-[200px] bg-gray-900
+              rounded-lg border-1 border-stone-500 "
           >
             <div className="items-center md:py-[12px] py-2 md:px-4 px-2">
               <h4 className="text-xs text-white md:text-base md:font-semibold">
