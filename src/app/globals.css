@@ -1,2 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
+.borders{
+  border: 1px solid red !important;
+}

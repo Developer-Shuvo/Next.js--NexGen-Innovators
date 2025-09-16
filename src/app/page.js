@@ -1,5 +1,6 @@
 import Hero from "@/Components/Hero/Hero";
 import WeDo from "@/Components/WeDo/WeDo";
+import WhyNexgen from "@/Components/WhyNexgen/WhyNexgen";
 import Navbar from "@/Layout/Navbar/Navbar";
 
 import Image from "next/image";
@@ -17,8 +18,8 @@ export default function Home() {
           <Navbar />
           <Hero />
           <WeDo />
-          {/* <WhyNexgen />
-          <Slider />
+          <WhyNexgen/>
+          {/* <Slider />
           <Benifits />
           <Invoice />
           <Services />

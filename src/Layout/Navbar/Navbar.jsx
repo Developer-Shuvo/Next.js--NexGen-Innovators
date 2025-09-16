@@ -73,7 +73,7 @@ const Navbar = () => {
             </a>
           ))}
           <a href={navLinks[navLinks.length - 1].href}>
-            <button className="px-4 py-2 border border-stone-600 rounded-md hover:border-cyan-700 transition duration-300 hover:shadow-md hover:text-stone-400">
+            <button className="px-4 py-2 border border-stone-600 rounded-md hover:border-cyan-700 transition duration-300 hover:shadow-md hover:text-stone-400 text-white   ">
               {navLinks[navLinks.length - 1].name}
             </button>
           </a>
