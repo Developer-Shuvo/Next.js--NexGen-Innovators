@@ -21,7 +21,7 @@ const Hero = () => {
           >
             Transform{" "}
             <span className="text-transparent bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text">
-              Your Brand++
+              Your Brand 
             </span>
             {/* Arrow icon */}
             <Image
