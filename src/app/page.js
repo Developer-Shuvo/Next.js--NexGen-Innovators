@@ -1,4 +1,5 @@
 import Benefits from "@/Components/Benefits/Benefits";
+import Contact from "@/Components/Contact/Contact";
 import FeaturedWork from "@/Components/FeaturedWork/FeaturedWork";
 import Hero from "@/Components/Hero/Hero";
 import Invoice from "@/Components/Invoice/Invoice";
@@ -6,6 +7,7 @@ import Services from "@/Components/Services/Services";
 import TestimonialSlider from "@/Components/Slider/Slider";
 import WeDo from "@/Components/WeDo/WeDo";
 import WhyNexgen from "@/Components/WhyNexgen/WhyNexgen";
+import Footer from "@/Layout/Footer/Footer";
 import Navbar from "@/Layout/Navbar/Navbar";
 
 import Image from "next/image";
@@ -29,8 +31,8 @@ export default function Home() {
           <Invoice />
           <Services />
           <FeaturedWork />
-          {/* <Inquiry />
-          <Footer /> */}
+          <Contact />
+          <Footer />
         </div>
       </div>
     </>
