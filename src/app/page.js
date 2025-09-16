@@ -1,6 +1,8 @@
 import Benefits from "@/Components/Benefits/Benefits";
+import FeaturedWork from "@/Components/FeaturedWork/FeaturedWork";
 import Hero from "@/Components/Hero/Hero";
 import Invoice from "@/Components/Invoice/Invoice";
+import Services from "@/Components/Services/Services";
 import TestimonialSlider from "@/Components/Slider/Slider";
 import WeDo from "@/Components/WeDo/WeDo";
 import WhyNexgen from "@/Components/WhyNexgen/WhyNexgen";
@@ -25,9 +27,9 @@ export default function Home() {
           <TestimonialSlider />
           <Benefits />
           <Invoice />
-          {/* <Services />
+          <Services />
           <FeaturedWork />
-          <Inquiry />
+          {/* <Inquiry />
           <Footer /> */}
         </div>
       </div>
