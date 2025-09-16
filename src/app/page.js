@@ -1,4 +1,6 @@
 import Hero from "@/Components/Hero/Hero";
+import TestimonialSlider from "@/Components/Slider/Slider";
+
 import WeDo from "@/Components/WeDo/WeDo";
 import WhyNexgen from "@/Components/WhyNexgen/WhyNexgen";
 import Navbar from "@/Layout/Navbar/Navbar";
@@ -19,13 +21,13 @@ export default function Home() {
           <Hero />
           <WeDo />
           <WhyNexgen/>
-          {/* <Slider />
-          <Benifits />
+          <TestimonialSlider/>
+          {/* <Benifits />
           <Invoice />
           <Services />
           <FeaturedWork />
           <Inquiry />
-          <Footer />  */}
+          <Footer />   */}
         </div>
       </div>
     </>

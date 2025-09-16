@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image"; // <--- add this
+import Image from "next/image"; 
 import star from "@/assets/WhyNexgen-image/star.png";
 import image from "@/assets/WhyNexgen-image/shuvo.png";
 import arrow from "@/assets/WhyNexgen-image/next.png";
